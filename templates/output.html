@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Chrisovalantis Vatos</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href = "{{ url_for('static', filename='css/style2.css') }}">
+  </head>
+  
+  <body class = "output">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <header>
+      <nav class = "navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class = "container-fluid">
+          <a>
+            <span class = "navbar-text">
+            123LoadBoard
+            </span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class = "projects">
+
+        <div class = "project-cards">
+
+          <div class = "card" id = "post-1" style = "width: 28rem">
+            <img src = "https://www.joc.com/sites/default/files/field_feature_image/truck_1.jpg" class = "card-img-top">
+            <div class = "card-body">
+              <h4 class = "card-title">Load ID: {{loadid_1}}</h4>
+              <h6><strong>Starting Location:</strong> {{origincity_1}}, {{originstate_1}}</h6>
+              <h6><strong>Ending Location:</strong> {{destinationcity_1}}, {{destinationstate_1}}</h6>
+              <h6><strong>Amount: {{amount_1}}</strong></h6>
+              <span>
+                <a class = "btn btn-success">Accept Load</a>
+              </span>
+            </div>
+          </div>
+          <div class = "card" id = "post-2" style = "width: 28rem">
+            <img src = "https://ak.picdn.net/shutterstock/videos/3634007/thumb/1.jpg" class = "card-img-top">
+            <div class = "card-body">
+              <h4 class = "card-title">Load ID: {{loadid_2}}</h4>
+              <h6><strong>Starting Location:</strong> {{origincity_2}}, {{originstate_2}}</h6>
+              <h6><strong>Ending Location:</strong> {{destinationcity_2}}, {{destinationstate_2}}</h6>
+              <h6><strong>Amount: {{amount_2}}</strong></h6>
+              <span>
+                <a class = "btn btn-success">Accept Load</a>
+              </span>
+            </div>
+          </div>
+          <div class = "card" id = "post-3" style = "width: 28rem">
+            <img src = "https://www.goodhire.com/static/3dc7870de25af282d7997e95e4d4f746/Article-What-are-DOT-background-checks.png" class = "card-img-top">
+            <div class = "card-body">
+              <h4 class = "card-title">Load ID: {{loadid_3}}</h4>
+              <h6><strong>Starting Location:</strong> {{origincity_3}}, {{originstate_3}}</h6>
+              <h6><strong>Ending Location:</strong> {{destinationcity_3}}, {{destinationstate_3}}</h6>
+              <h6><strong>Amount: {{amount_3}}</strong></h6>
+              <span>
+                <a class = "btn btn-success">Accept Load</a>
+              </span>
+            </div>
+          </div>
+          <div class = "card" id = "post-4" style = "width: 28rem">
+            <img src = "https://wallpapermemory.com/uploads/565/truck-background-hd-1920x1200-477721.jpg" class = "card-img-top">
+            <div class = "card-body">
+              <h4 class = "card-title">Load ID: {{loadid_4}}</h4>
+              <h6><strong>Starting Location:</strong> {{origincity_4}}, {{originstate_4}}</h6>
+              <h6><strong>Ending Location:</strong> {{destinationcity_4}}, {{destinationstate_4}}</h6>
+              <h6><strong>Amount: {{amount_4}}</strong></h6>
+              <span>
+                <a class = "btn btn-success">Accept Load</a>
+              </span>
+            </div>
+          </div>
+          <div class = "card" id = "post-5" style = "width: 28rem">
+            <img src = "http://ak4.picdn.net/shutterstock/videos/3633995/thumb/1.jpgs" class = "card-img-top">
+            <div class = "card-body">
+              <h4 class = "card-title">Load ID: {{loadid_5}}</h4>
+              <h6><strong>Starting Location:</strong> {{origincity_5}}, {{originstate_5}}</h6>
+              <h6><strong>Ending Location:</strong> {{destinationcity_5}}, {{destinationstate_5}}</h6>
+              <h6><strong>Amount: {{amount_5}}</strong></h6>
+              <span>
+                <a class = "btn btn-success">Accept Load</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </main>
+
+  </body>
+</html>
