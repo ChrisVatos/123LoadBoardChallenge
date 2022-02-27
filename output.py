@@ -5,20 +5,8 @@ from urllib.request import urlopen
 import json
 # store the URL in url as 
 # parameter for urlopen
-url = "https://codejam.123loadboard.com/data/123Loadboard_CodeJam_2022_dataset.json"
-  
-# store the response of URL
-response = urlopen(url)
-  
-# storing the JSON response 
-# from url in data
-data_json = json.loads(response.read())
-  
-
-# store the response of URL
-response = urlopen(url)
-  
-data_json = json.loads(response.read())
+with open ("all_the_loads.json") as file:
+    data_json = json.load(file)
   
 # print the json response
 def get_load(desired_id):

@@ -135,8 +135,8 @@ def convert_path_to_json(path,marketplace,trip_id):
 
 def main():
 
-    with req.urlopen("https://codejam.123loadboard.com/data/123Loadboard_CodeJam_2022_dataset.json") as url:
-        marketplace = json.loads(url.read().decode())
+    with open ("all_the_loads.json") as file:
+        marketplace = json.load(file)
     
     with open ("sample.json") as file:
         input = json.load(file)
